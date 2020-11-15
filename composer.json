@@ -1,5 +1,5 @@
 {
-    "name": "random/generate-data",
+    "name": "random-test/generate-data",
     "description": "create random data include phone address",
     "type": "library",
     "license": "MIT",
