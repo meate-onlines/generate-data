@@ -9,5 +9,12 @@
             "email": "fmj_lg@163.com"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "Random\\Generate\\": "/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    }
 }
