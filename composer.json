@@ -1,0 +1,13 @@
+{
+    "name": "random/generate-data",
+    "description": "create random data include phone address",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "liuguang",
+            "email": "fmj_lg@163.com"
+        }
+    ],
+    "require": {}
+}
