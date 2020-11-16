@@ -33,6 +33,17 @@ class Random
         return round($min + mt_rand()/mt_getrandmax() * ($max-$min), $round);
     }
 
+    public function random_time($start_time, $type = 'str')
+    {
+        $timestamp = strtotime($start_time);
+        $min = $timestamp - 365 * 86400;
+        $random_time = mt_rand($min, $timestamp);
+        if ($type !== 'str'){
+            return $random_time;
+        }
+        return date('Y-m-d H:i:s', $random_time);
+    }
+
     protected function get_one_data()
     {
         $fo = new \SplFileObject(__DIR__ . '/../lib/chenyu.json', 'r');
