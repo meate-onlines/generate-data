@@ -33,12 +33,12 @@ class Random
         return round($min + mt_rand()/mt_getrandmax() * ($max-$min), $round);
     }
 
-    public function random_time($start_time, $type = 'str')
+    public function random_time($start_time, $type = 'int')
     {
         $timestamp = strtotime($start_time);
         $min = $timestamp - 365 * 86400;
         $random_time = mt_rand($min, $timestamp);
-        if ($type !== 'str'){
+        if ($type === 'int'){
             return $random_time;
         }
         return date('Y-m-d H:i:s', $random_time);
